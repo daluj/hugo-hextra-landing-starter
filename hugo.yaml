@@ -2,7 +2,13 @@ baseURL: "http://localhost:1313/"
 title: "My Site"
 
 defaultContentLanguage: en
-enableGitInfo: true
+languages:
+  en:
+    languageName: English
+    weight: 1
+  es:
+    languageName: Español
+    weight: 2
 
 build:
   buildStats:
