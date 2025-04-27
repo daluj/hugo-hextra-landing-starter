@@ -51,8 +51,20 @@ params:
   css:
     - /css/helix.css
 
+    # Display the last modification date
+  displayUpdatedDate: true
+  dateFormat: "January 2, 2006"
+
+  blog:
+  list:
+    displayTags: true
+    # date | lastmod | publishDate | title | weight
+    sortBy: date
+    sortOrder: desc # or "asc"
+
 menu:
   main:
-    - name: Docs
-      pageRef: /docs
+    - name: Search
       weight: 1
+      params:
+        type: search
