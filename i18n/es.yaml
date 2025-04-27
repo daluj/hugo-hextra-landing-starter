@@ -1,0 +1,64 @@
+# Hero section
+landing_title: "Plataforma de Optimización Empresarial"
+hero_title: "¿Sientes que tu negocio se ahoga en el caos?"
+hero_subtitle: "Transformamos el caos de tu negocio en orden. ¿Y si pudieras optimizar tus operaciones?"
+view_docs: "Ver Documentación"
+get_started: "Hablemos sobre el caos"
+
+# Testimonial section
+testimonial_heading: "¿Te suena familiar? No estás solo."
+testimonial_subheading: "Hemos ayudado a cientos de empresas. El 70-80% de ellas estaban en un caos similar."
+
+# Features section
+streamlined_operations: "Operaciones Optimizadas"
+feature_1_title: "Eficiencia"
+feature_1_desc: "Reduce el tiempo y los recursos desperdiciados con nuestros procesos optimizados."
+feature_2_title: "Claridad"
+feature_2_desc: "Obtén información clara sobre las operaciones y el rendimiento de tu empresa."
+feature_3_title: "Crecimiento"
+feature_3_desc: "Haz crecer tu negocio con confianza utilizando nuestros sistemas probados."
+
+# Results section
+results_heading: "¿Sientes que estás estancado? Ellos también lo estaban..."
+results_stat: "30% de aumento en la eficiencia operativa"
+results_desc: "Después de implementar nuestro sistema, los clientes ven un aumento promedio del 30% en la eficiencia."
+client_name: "Representante de la Empresa"
+trusted_by: "Confiado por Empresas Líderes"
+
+# Process section
+process_heading: "¿Cómo suena un camino claro hacia adelante?"
+process_subheading: "Así es exactamente cómo creamos orden a partir del caos para empresas como la tuya."
+step_1: "PASO 1"
+discovery_title: "Descubrimiento y Análisis"
+discovery_desc: "Comenzamos por comprender tus procesos actuales, identificar cuellos de botella y analizar dónde se pueden realizar mejoras."
+step_2: "PASO 2"
+strategy_title: "Desarrollo de Estrategia"
+strategy_desc: "Basándonos en nuestros hallazgos, creamos una estrategia personalizada para optimizar tus operaciones y maximizar la eficiencia."
+step_3: "PASO 3"
+implementation_title: "Implementación"
+implementation_desc: "Trabajamos junto con tu equipo para implementar los nuevos sistemas y procesos, asegurando una transición sin problemas."
+step_4: "PASO 4"
+refinement_title: "Refinamiento y Optimización"
+refinement_desc: "Monitoreamos y refinamos continuamente las soluciones implementadas para garantizar un rendimiento y resultados óptimos."
+
+# CTA section
+cta_heading: "¿Listo para dejar de adivinar y empezar a ganar?"
+cta_subheading: "Programa una consulta gratuita de 30 minutos para ver si somos una buena opción."
+cta_button: "Reserva Tu Llamada Gratuita de 30 Minutos"
+
+# Footer
+footer_company: "EMPRESA"
+footer_about: "Acerca de"
+footer_team: "Equipo"
+footer_careers: "Carreras"
+footer_get_started: "COMENZAR"
+footer_contact: "Contacto"
+footer_docs: "Documentación"
+footer_join_community: "ÚNETE A NUESTRA COMUNIDAD"
+footer_discord: "Discord"
+footer_twitter: "Twitter"
+footer_github: "GitHub"
+footer_legal: "LEGAL"
+footer_privacy: "Privacidad"
+footer_terms: "Términos"
+footer_copyright: "Tu Empresa. Todos los derechos reservados."

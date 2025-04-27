@@ -1,0 +1,64 @@
+# Hero section
+landing_title: "Business Optimization Platform"
+hero_title: "Feels like your business is drowning in chaos?"
+hero_subtitle: "We transform your business chaos into order. What if you could streamline your operations?"
+view_docs: "View Docs"
+get_started: "Let's talk about the chaos"
+
+# Testimonial section
+testimonial_heading: "Sound familiar? You're not alone."
+testimonial_subheading: "We've helped hundreds of businesses. 70-80% of them were in similar chaos."
+
+# Features section
+streamlined_operations: "Streamlined Operations"
+feature_1_title: "Efficiency"
+feature_1_desc: "Reduce wasted time and resources with our streamlined processes."
+feature_2_title: "Clarity"
+feature_2_desc: "Get clear insights into your business operations and performance."
+feature_3_title: "Growth"
+feature_3_desc: "Scale your business with confidence using our proven systems."
+
+# Results section
+results_heading: "Feel like you're stuck? They were too..."
+results_stat: "30% increase in operational efficiency"
+results_desc: "After implementing our system, clients see an average 30% boost in efficiency."
+client_name: "Company Representative"
+trusted_by: "Trusted by Leading Companies"
+
+# Process section
+process_heading: "How does a clear path forward sound?"
+process_subheading: "Here is exactly how we create order out of chaos for companies like yours."
+step_1: "STEP 1"
+discovery_title: "Discovery & Analysis"
+discovery_desc: "We start by understanding your current processes, identifying bottlenecks, and analyzing where improvements can be made."
+step_2: "STEP 2"
+strategy_title: "Strategy Development"
+strategy_desc: "Based on our findings, we create a customized strategy to streamline your operations and maximize efficiency."
+step_3: "STEP 3"
+implementation_title: "Implementation"
+implementation_desc: "We work alongside your team to implement the new systems and processes, ensuring a smooth transition."
+step_4: "STEP 4"
+refinement_title: "Refinement & Optimization"
+refinement_desc: "We continuously monitor and refine the implemented solutions to ensure optimal performance and results."
+
+# CTA section
+cta_heading: "Ready to stop guessing and start winning?"
+cta_subheading: "Schedule a free 30-minute consultation to see if we're a good fit."
+cta_button: "Book Your Free 30-Minute Call"
+
+# Footer
+footer_company: "COMPANY"
+footer_about: "About"
+footer_team: "Team"
+footer_careers: "Careers"
+footer_get_started: "GET STARTED"
+footer_contact: "Contact"
+footer_docs: "Documentation"
+footer_join_community: "JOIN OUR COMMUNITY"
+footer_discord: "Discord"
+footer_twitter: "Twitter"
+footer_github: "GitHub"
+footer_legal: "LEGAL"
+footer_privacy: "Privacy"
+footer_terms: "Terms"
+footer_copyright: "Your Company. All rights reserved."
