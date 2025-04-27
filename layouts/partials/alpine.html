@@ -1,0 +1,2 @@
+{{ $mainjs := resources.Get "js/landing.js" | js.Build }}
+<script src="{{ $mainjs.RelPermalink }}" defer></script>

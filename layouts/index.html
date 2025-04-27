@@ -5,6 +5,8 @@
   <title>Landing Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {{ partialCached "css.html" . }}
+  {{ partialCached "alpine.html" . }}
+
 </head>
 <body class="bg-gray-50 text-gray-900">
 
@@ -14,6 +16,11 @@
     <div class="flex space-x-4">
       <a href="/docs/" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">View Docs</a>
       <a href="#features" class="px-6 py-3 bg-gray-300 text-gray-800 rounded-lg hover:bg-gray-400">Features</a>
+    </div>
+    <!-- Alpine.js test component -->
+    <div x-data="{ open: false }" class="mt-8">
+      <button @click="open = !open" class="px-4 py-2 bg-green-600 text-white rounded">Toggle Alpine Test</button>
+      <span x-show="open" class="ml-4 text-green-700">Alpine.js is working!</span>
     </div>
   </section>
 
