@@ -343,28 +343,27 @@
             <a href="#" class="inline-block px-8 py-4 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-all pulse font-bold">{{ i18n "cta_button" | default "Book Your Free 30-Minute Call" }}</a>
          </div>
       </div>
-      <div class="py-4">
-        {{- $copyright := (T "copyright") | default "© 2024 My Site." -}}
-        <footer class="text-xs flex items-center justify-between w-full px-4 py-2">
-          <!-- Left Side -->
-          <div class="flex items-center gap-4">
-            <span class="text-gray-600">{{ $copyright }}</span>
-            <nav class="flex divide-x">
-              <a class="flex items-center gap-1 text-gray-600 transition-colors hover:text-gray-900 px-2" href="/privacy">Privacy</a>
-              <a class="flex items-center gap-1 text-gray-600 transition-colors hover:text-gray-900 px-2" href="/terms">Terms</a>
-            </nav>
-          </div>
+      
+      {{- $copyright := (T "copyright") | default "© 2024 My Site." -}}
+      <footer class="text-xs flex items-center justify-between w-full px-4 py-2">
+        <!-- Left Side -->
+        <div class="flex items-center gap-4">
+          {{ partial "theme-toggle.html" }}
+          {{- if hugo.IsMultilingual -}}
+            {{- partial "language-switch.html" (dict "context" .) -}}
+          {{- end -}}
+        </div>
+              
+        <!-- Right Side -->
+        <div class="flex items-center gap-4">
+          <span class="text-gray-600">{{ $copyright }}</span>
+          <nav class="flex divide-x">
+            <a class="flex items-center gap-1 text-gray-600 transition-colors hover:text-gray-900 px-2" href="/privacy">Privacy</a>
+            <a class="flex items-center gap-1 text-gray-600 transition-colors hover:text-gray-900 px-2" href="/terms">Terms</a>
+          </nav>
+        </div>
+      </footer>
         
-          <!-- Right Side -->
-          <div class="flex items-center gap-4">
-            {{ partial "theme-toggle.html" }}
-            {{- if hugo.IsMultilingual -}}
-              {{- partial "language-switch.html" (dict "context" .) -}}
-            {{- end -}}
-          </div>
-        </footer>
-        
-     </div>
       {{ partial "scripts.html" . }}
    </body>
 </html>
