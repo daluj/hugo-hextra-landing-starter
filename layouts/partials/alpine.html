@@ -3,6 +3,9 @@
 <script>
     function carousel() {
       return {
+        init() {
+          
+        },
         scrollLeft() {
           this.$refs.carousel.scrollBy({ left: -350, behavior: 'smooth' });
         },
