@@ -45,11 +45,8 @@ params:
     displayLogo: false
 
   footer:
-    displayCopyright: false
+    displayCopyright: true
     displayPoweredBy: false
-
-  css:
-    - /css/helix.css
 
     # Display the last modification date
   displayUpdatedDate: true

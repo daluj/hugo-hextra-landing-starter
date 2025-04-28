@@ -1,33 +1,5 @@
-<!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}">
-<head>
-  <meta charset="UTF-8">
-  <title>{{ i18n "landing_title" | default "Landing Page" }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {{ partialCached "css.html" . }}
-  {{ partialCached "alpine.html" . }}
-  <style>
-    /* Pulse animation for CTA button */
-    @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(237, 137, 54, 0.7); }
-      70% { box-shadow: 0 0 0 10px rgba(237, 137, 54, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(237, 137, 54, 0); }
-    }
-    .pulse {
-      animation: pulse 2s infinite;
-    }
-    /* Dark theme background */
-    .bg-dark-blue {
-      background-color: #0f172a;
-    }
-    .text-light {
-      color: #e2e8f0;
-    }
-  </style>
-</head>
-<body>
-
-  <section class="min-h-screen flex flex-col justify-center items-center text-center p-6">
+{{ define "main" }}
+  <div class="min-h-screen flex flex-col justify-center items-center text-center p-6">
     <h1 class="text-5xl font-extrabold mb-6 text-blue-300">{{ i18n "hero_title" | default "Feels like your business is drowning in chaos?" }}</h1>
     <p class="text-xl mb-8 max-w-2xl">{{ i18n "hero_subtitle" | default "We transform your business chaos into order. What if you could streamline your operations?" }}</p>
     
@@ -35,9 +7,9 @@
       <a href="/docs/" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all">{{ i18n "view_docs" | default "View Docs" }}</a>
       <a href="#contact" class="px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-all pulse">{{ i18n "get_started" | default "Let's talk about the chaos" }}</a>
     </div>
-  </section>
-  
-  <section class="py-16">
+  </div>
+
+  <div class="py-16">
     <div class="max-w-5xl mx-auto px-6 text-center">
       <h2 class="text-2xl font-bold mb-8 text-blue-300">{{ i18n "testimonial_heading" | default "Sound familiar? You're not alone." }}</h2>
       <p class="text-lg mb-10">{{ i18n "testimonial_subheading" | default "We've helped hundreds of businesses. 70-80% of them were in similar chaos." }}</p>
@@ -48,9 +20,9 @@
         <span class="px-4 py-2 bg-blue-900 rounded-full text-sm">Manufacturing</span>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section id="features" class="py-20">
+  <div id="features" class="py-20">
     <div class="max-w-7xl mx-auto px-6 text-center">
       <h2 class="text-3xl font-bold mb-12 text-blue-300">{{ i18n "streamlined_operations" | default "Streamlined Operations" }}</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -68,9 +40,9 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="py-20">
+  <div class="py-20">
     <div class="max-w-7xl mx-auto px-6 text-center">
       <h2 class="text-3xl font-bold mb-12 text-blue-300">{{ i18n "results_heading" | default "Feel like you're stuck? They were too..." }}</h2>
       
@@ -92,88 +64,71 @@
         <div class="w-24 h-12 bg-gray-700 rounded flex items-center justify-center">Logo 5</div>
       </div>
     </div>
-  </section>
-  
-  <section class="py-20">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-3xl font-bold mb-12 text-center text-blue-300">{{ i18n "process_heading" | default "How does a clear path forward sound?" }}</h2>
-      <p class="text-center mb-16">{{ i18n "process_subheading" | default "Here is exactly how we create order out of chaos for companies like yours." }}</p>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-gray-800 p-8 rounded-lg border border-gray-700">
-          <div class="text-blue-300 font-bold mb-2">{{ i18n "step_1" | default "STEP 1" }}</div>
-          <h3 class="text-xl font-bold mb-4 text-white">{{ i18n "discovery_title" | default "Discovery & Analysis" }}</h3>
-          <p>{{ i18n "discovery_desc" | default "We start by understanding your current processes, identifying bottlenecks, and analyzing where improvements can be made." }}</p>
+  </div>
+
+  <div id="our-process" class="pb-24 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-medium tracking-tight text-blue-500 dark:text-blue-400 animate-fade-in-up">
+        How does a clear path forward sound?
+      </h2>
+      <p class="mt-4 text-lg text-gray-600 dark:text-gray-300 animate-fade-in-up animation-delay-200">
+        After 15 years turning chaos into clarity for companies like yours, we know how to cut through the noise. 
+      </p>
+      <div class="mt-12 flex flex-col items-center space-y-6">
+        <div class="mr-8 md:mr-24 relative p-6 glass ring-1 ring-blue-500/50 dark:ring-blue-400/50 rounded-lg animate-fade-in-up animation-delay-300">
+          <div class="w-full text-left">
+            <h2 class="text-blue-500 dark:text-blue-400 font-medium tracking-wider uppercase">Step 1</h2>
+            <div class="text-2xl font-semibold leading-snug tracking-tight text-gray-900 dark:text-gray-100">Discovery & Analysis</div>
+            <p class="mt-4 text-sm text-gray-600 dark:text-gray-300">
+              It seems like you’re drowning in data but starving for answers. We dig deep into your business—challenges, goals, market—because we’ve learned over decades that real solutions start with real understanding.
+            </p>
+          </div>
         </div>
-        
-        <div class="bg-gray-800 p-8 rounded-lg border border-gray-700">
-          <div class="text-blue-300 font-bold mb-2">{{ i18n "step_2" | default "STEP 2" }}</div>
-          <h3 class="text-xl font-bold mb-4 text-white">{{ i18n "strategy_title" | default "Strategy Development" }}</h3>
-          <p>{{ i18n "strategy_desc" | default "Based on our findings, we create a customized strategy to streamline your operations and maximize efficiency." }}</p>
+        <svg class="h-16 mx-auto text-blue-500 dark:text-blue-400 md:h-20" viewBox="0 0 60 200">
+          <line x1="15" x2="15" y1="0" y2="200" stroke="currentColor" stroke-width="8" stroke-linecap="square"></line>
+        </svg>
+        <div class="ml-8 md:ml-24 relative p-6 glass ring-1 ring-blue-500/50 dark:ring-blue-400/50 rounded-lg animate-fade-in-up animation-delay-300">
+          <div class="w-full text-left">
+            <h2 class="text-blue-500 dark:text-blue-400 font-medium tracking-wider uppercase">Step 2</h2>
+            <div class="text-2xl font-semibold leading-snug tracking-tight text-gray-900 dark:text-gray-100">Strategy Development</div>
+            <p class="mt-4 text-sm text-gray-600 dark:text-gray-300">
+              It feels like every option’s a gamble? With insights from Step 1, we craft a strategy that’s worked for industry leaders—precise, practical, and built to tackle your inefficiencies head-on.
+            </p>
+          </div>
         </div>
-        
-        <div class="bg-gray-800 p-8 rounded-lg border border-gray-700">
-          <div class="text-blue-300 font-bold mb-2">{{ i18n "step_3" | default "STEP 3" }}</div>
-          <h3 class="text-xl font-bold mb-4 text-white">{{ i18n "implementation_title" | default "Implementation" }}</h3>
-          <p>{{ i18n "implementation_desc" | default "We work alongside your team to implement the new systems and processes, ensuring a smooth transition." }}</p>
+        <svg class="h-16 mx-auto text-blue-500 dark:text-blue-400 md:h-20" viewBox="0 0 60 200">
+          <line x1="15" x2="15" y1="0" y2="200" stroke="currentColor" stroke-width="8" stroke-linecap="square"></line>
+        </svg>
+        <div class="mr-8 md:mr-24 relative p-6 glass ring-1 ring-blue-500/50 dark:ring-blue-400/50 rounded-lg animate-fade-in-up animation-delay-300">
+          <div class="w-full text-left">
+            <h2 class="text-blue-500 dark:text-blue-400 font-medium tracking-wider uppercase">Step 3</h2>
+            <div class="text-2xl font-semibold leading-snug tracking-tight text-gray-900 dark:text-gray-100">Implementation</div>
+            <p class="mt-4 text-sm text-gray-600 dark:text-gray-300">
+              It looks like execution’s where things stall. Our team rolls up our sleeves—drawing on years of hands-on success—to deliver results you can measure, not just promises.
+            </p>
+          </div>
         </div>
-        
-        <div class="bg-gray-800 p-8 rounded-lg border border-gray-700">
-          <div class="text-blue-300 font-bold mb-2">{{ i18n "step_4" | default "STEP 4" }}</div>
-          <h3 class="text-xl font-bold mb-4 text-white">{{ i18n "refinement_title" | default "Refinement & Optimization" }}</h3>
-          <p>{{ i18n "refinement_desc" | default "We continuously monitor and refine the implemented solutions to ensure optimal performance and results." }}</p>
+        <svg class="h-16 mx-auto text-blue-500 dark:text-blue-400 md:h-20" viewBox="0 0 60 200">
+          <line x1="15" x2="15" y1="0" y2="200" stroke="currentColor" stroke-width="8" stroke-linecap="square"></line>
+        </svg>
+        <div class="ml-8 md:ml-24 relative p-6 glass ring-1 ring-blue-500/50 dark:ring-blue-400/50 rounded-lg animate-fade-in-up animation-delay-300">
+          <div class="w-full text-left">
+            <h2 class="text-blue-500 dark:text-blue-400 font-medium tracking-wider uppercase">Step 4</h2>
+            <div class="text-2xl font-semibold leading-snug tracking-tight text-gray-900 dark:text-gray-100">Evaluation & Optimization</div>
+            <p class="mt-4 text-sm text-gray-600 dark:text-gray-300">
+              It seems like sustainability’s the real worry. We’ve fine-tuned this step over countless projects—assessing, refining, and locking in gains so your success sticks.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-  
-  <section id="contact" class="py-20">
+  </div>
+
+  <div id="contact" class="py-20">
     <div class="max-w-3xl mx-auto px-6 text-center">
       <h2 class="text-3xl font-bold mb-6 text-blue-300">{{ i18n "cta_heading" | default "Ready to stop guessing and start winning?" }}</h2>
       <p class="text-xl mb-10">{{ i18n "cta_subheading" | default "Schedule a free 30-minute consultation to see if we're a good fit." }}</p>
       <a href="#" class="inline-block px-8 py-4 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-all pulse font-bold">{{ i18n "cta_button" | default "Book Your Free 30-Minute Call" }}</a>
     </div>
-  </section>
-  
-  <footer class="py-12">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-        <div>
-          <h3 class="text-white font-bold mb-4">{{ i18n "footer_company" | default "COMPANY" }}</h3>
-          <ul class="space-y-2">
-            <li><a href="#" class="hover:text-white transition-colors">{{ i18n "footer_about" | default "About" }}</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">{{ i18n "footer_team" | default "Team" }}</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">{{ i18n "footer_careers" | default "Careers" }}</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="text-white font-bold mb-4">{{ i18n "footer_get_started" | default "GET STARTED" }}</h3>
-          <ul class="space-y-2">
-            <li><a href="#" class="hover:text-white transition-colors">{{ i18n "footer_contact" | default "Contact" }}</a></li>
-            <li><a href="/docs/" class="hover:text-white transition-colors">{{ i18n "footer_docs" | default "Documentation" }}</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="text-white font-bold mb-4">{{ i18n "footer_join_community" | default "JOIN OUR COMMUNITY" }}</h3>
-          <ul class="space-y-2">
-            <li><a href="#" class="hover:text-white transition-colors">{{ i18n "footer_discord" | default "Discord" }}</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">{{ i18n "footer_twitter" | default "Twitter" }}</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">{{ i18n "footer_github" | default "GitHub" }}</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="text-white font-bold mb-4">{{ i18n "footer_legal" | default "LEGAL" }}</h3>
-          <ul class="space-y-2">
-            <li><a href="#" class="hover:text-white transition-colors">{{ i18n "footer_privacy" | default "Privacy" }}</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">{{ i18n "footer_terms" | default "Terms" }}</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="pt-8 text-center">
-        <p>© {{ now.Format "2006" }} {{ i18n "footer_copyright" | default "Your Company. All rights reserved." }}</p>
-      </div>
-    </div>
-  </footer>
-
-</body>
-</html>
+  </div>
+{{ end }}
