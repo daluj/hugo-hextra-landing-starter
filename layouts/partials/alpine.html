@@ -3,9 +3,6 @@
 <script>
     function carousel() {
       return {
-        init() {
-          this.startAutoScroll();
-        },
         scrollLeft() {
           this.$refs.carousel.scrollBy({ left: -350, behavior: 'smooth' });
         },
